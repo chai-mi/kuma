@@ -1,0 +1,16 @@
+compatibility_date = "2024-10-04"
+main = "src/index.ts"
+minify = true
+name = "kuma"
+upload_source_maps = true
+workers_dev = false
+
+[observability]
+enabled = true
+
+[assets]
+directory = "./dist/"
+
+[[routes]]
+pattern = "kuma.chaimi.cc/*"
+zone_name = "chaimi.cc"
