@@ -14,3 +14,9 @@ directory = "./dist/"
 [[routes]]
 pattern = "kuma.chaimi.cc/*"
 zone_name = "chaimi.cc"
+
+[build]
+command = """
+wget https://github.com/louislam/uptime-kuma/releases/latest/download/dist.tar.gz && 
+tar -zxvf dist.tar.gz --exclude=*.br --exclude=*.gz  --exclude=dist/icon-512x512.png --exclude=dist/icon-192x192.png --exclude=dist/manifest.json
+"""
