@@ -7,11 +7,12 @@
     "dev": "wrangler dev",
     "start": "wrangler dev",
     "test": "vitest",
-    "cf-typegen": "wrangler types"
+    "cf-typegen": "wrangler types",
+    "build": "wget https://github.com/louislam/uptime-kuma/releases/latest/download/dist.tar.gz && tar -zxvf dist.tar.gz --exclude=*.br --exclude=*.gz  --exclude=dist/icon-512x512.png --exclude=dist/icon-192x192.png --exclude=dist/manifest.json"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.5.2",
-    "@cloudflare/workers-types": "^4.20241004.0",
+    "@cloudflare/workers-types": "^4.20241022.0",
     "typescript": "^5.5.2",
     "vitest": "2.0.5",
     "wrangler": "^3.60.3"
