@@ -1,7 +1,7 @@
-compatibility_date = "2024-12-05"
-main = "src/index.ts"
-minify = true
 name = "kuma"
+main = "src/index.ts"
+compatibility_date = "2024-12-24"
+minify = true
 upload_source_maps = true
 workers_dev = false
 preview_urls = false
@@ -14,4 +14,4 @@ pattern = "kuma.chaimi.cc/*"
 zone_name = "chaimi.cc"
 
 [build]
-command = "pnpm build"
+command = "bun run build"
