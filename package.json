@@ -1,11 +1,9 @@
 {
-  "name": "kuma",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
-    "build": "wget https://github.com/louislam/uptime-kuma/releases/latest/download/dist.tar.gz && tar -zxvf dist.tar.gz --exclude=*.br --exclude=*.gz  --exclude=dist/icon-512x512.png --exclude=dist/icon-192x192.png --exclude=dist/manifest.json"
-  }
+    "name": "kuma",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "deploy": "wrangler deploy",
+        "build": "wget https://github.com/louislam/uptime-kuma/releases/latest/download/dist.tar.gz && tar -zxvf dist.tar.gz --exclude=*.br --exclude=*.gz  --exclude=dist/icon-512x512.png --exclude=dist/icon-192x192.png --exclude=dist/manifest.json"
+    }
 }
